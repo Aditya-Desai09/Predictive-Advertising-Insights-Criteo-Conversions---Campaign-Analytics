@@ -188,7 +188,7 @@ Jupyter Notebook
 
 **Aditya Desai**
 - GitHub: [@Aditya-Desai09](https://github.com/Aditya-Desai09)
-- Location: Nagpur, Maharashtra, India
+- Location: Pune, Maharashtra, India
 - Project: PG-DBDA (Post Graduate Diploma in Big Data Analytics)
 
 ---
@@ -210,8 +210,7 @@ This project is licensed under the MIT License.
 ##  Contact
 
 For questions or collaboration:
-- gmail: adidesai119@gmail.com
+- Gmail: adidesai119@gmail.com
 
 ---
 
-Just copy-paste this entire block into your `README.md` file. ✅
