@@ -1,0 +1,44 @@
+{
+  "project_title": "Criteo Attribution Modeling - Random Forest (Complete Dataset)",
+  "model": "Random Forest",
+  "dataset": {
+    "size": "16,468,027 impressions",
+    "attribution_rate": "2.7%",
+    "features": 14
+  },
+  "performance": {
+    "roc_auc": "0.948",
+    "precision": "13.2%",
+    "recall": "91.2%",
+    "training_time": "393.6s"
+  },
+  "top_features": [
+    {
+      "feature": "click",
+      "importance": 0.5206402431505394
+    },
+    {
+      "feature": "campaign_perf",
+      "importance": 0.12384318540371894
+    },
+    {
+      "feature": "cost_quartile",
+      "importance": 0.10156732961867594
+    },
+    {
+      "feature": "cpo",
+      "importance": 0.09736645020383726
+    },
+    {
+      "feature": "cat1",
+      "importance": 0.07259620220912158
+    }
+  ],
+  "key_achievements": [
+    "Trained on COMPLETE dataset (16,468,027 rows)",
+    "ROC-AUC: 0.948",
+    "Fast execution: 393.6 seconds (parallelized)",
+    "Feature importance analysis included",
+    "Production-ready ensemble model"
+  ]
+}

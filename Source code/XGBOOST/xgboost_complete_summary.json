@@ -1,0 +1,44 @@
+{
+  "project_title": "Criteo Attribution Modeling - XGBoost (Complete Dataset)",
+  "model": "XGBoost",
+  "dataset": {
+    "size": "16,468,027 impressions",
+    "attribution_rate": "2.7%",
+    "features": 14
+  },
+  "performance": {
+    "roc_auc": "0.950",
+    "precision": "13.7%",
+    "recall": "91.1%",
+    "training_time": "34.9s"
+  },
+  "top_features": [
+    {
+      "feature": "click",
+      "importance": 0.9694735407829285
+    },
+    {
+      "feature": "campaign_perf",
+      "importance": 0.01165070291608572
+    },
+    {
+      "feature": "cat1",
+      "importance": 0.009480487555265427
+    },
+    {
+      "feature": "cat4",
+      "importance": 0.0023149920161813498
+    },
+    {
+      "feature": "cost",
+      "importance": 0.0020268261432647705
+    }
+  ],
+  "key_achievements": [
+    "Trained on COMPLETE dataset (16,468,027 rows)",
+    "ROC-AUC: 0.950",
+    "Fast execution: 34.9 seconds (parallelized)",
+    "Feature importance analysis included",
+    "State-of-the-art gradient boosting"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "optimization_info": {
+    "dataset_size": 16468027,
+    "complete_dataset": true,
+    "attribution_rate": 0.02686563484502424,
+    "optimization_time_minutes": 305.2865324695905,
+    "search_iterations": 50,
+    "cv_folds": 3,
+    "advanced_features": true
+  },
+  "targets": {
+    "roc_auc": 0.955,
+    "precision": 0.18,
+    "recall": 0.9,
+    "f1_score": 0.3
+  },
+  "targets_achieved": {
+    "roc_auc": false,
+    "precision": false,
+    "recall": false,
+    "f1_score": false
+  },
+  "targets_met_count": 0,
+  "best_parameters": {
+    "subsample": 0.8,
+    "scale_pos_weight": 28.977834033548152,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.5,
+    "n_estimators": 300,
+    "min_child_weight": 10,
+    "max_depth": 10,
+    "learning_rate": 0.05,
+    "colsample_bytree": 0.9
+  },
+  "baseline_performance": {
+    "roc_auc": 0.9507983918781888,
+    "precision": 0.138681606988939,
+    "recall": 0.9127987794541448,
+    "f1_score": 0.24078128935997054,
+    "training_time": 125.62797355651855
+  },
+  "optimized_performance": {
+    "roc_auc": 0.9521109979152809,
+    "precision": 0.1587696682349272,
+    "recall": 0.8859467706390913,
+    "f1_score": 0.2692816339709878,
+    "cv_score": 0.27009288444697876
+  },
+  "improvements": {
+    "roc_auc": 0.1380530350392315,
+    "precision": 14.485021973815446,
+    "recall": -2.9417226906362646,
+    "f1_score": 11.836611011916695
+  },
+  "feature_importance": [
+    {
+      "feature": "click",
+      "importance": 0.9821252822875977
+    },
+    {
+      "feature": "campaign_perf",
+      "importance": 0.005253924522548914
+    },
+    {
+      "feature": "cat1",
+      "importance": 0.0043441010639071465
+    },
+    {
+      "feature": "click_cost_interaction",
+      "importance": 0.002619817154482007
+    },
+    {
+      "feature": "cat4",
+      "importance": 0.0013278232654556632
+    },
+    {
+      "feature": "cat1_cat2_interaction",
+      "importance": 0.000809865421615541
+    },
+    {
+      "feature": "cost_efficiency",
+      "importance": 0.0007098708883859217
+    },
+    {
+      "feature": "campaign_click_rate",
+      "importance": 0.00039273800211958587
+    },
+    {
+      "feature": "cpo",
+      "importance": 0.0002942690334748477
+    },
+    {
+      "feature": "cat5",
+      "importance": 0.00028634353657253087
+    },
+    {
+      "feature": "cat3",
+      "importance": 0.0002819382061716169
+    },
+    {
+      "feature": "cat3_cat4_interaction",
+      "importance": 0.0002538292028475553
+    },
+    {
+      "feature": "cat2",
+      "importance": 0.00023631569638382643
+    },
+    {
+      "feature": "cat6",
+      "importance": 0.00022571187582798302
+    },
+    {
+      "feature": "campaign",
+      "importance": 0.00022227563022170216
+    },
+    {
+      "feature": "cost",
+      "importance": 0.00016537871852051467
+    },
+    {
+      "feature": "cat9",
+      "importance": 0.00016036989109124988
+    },
+    {
+      "feature": "cost_quartile",
+      "importance": 0.00015594596334267408
+    },
+    {
+      "feature": "cat8",
+      "importance": 0.00013419667084235698
+    }
+  ],
+  "engineered_features_impact": {
+    "click_cost_interaction": {
+      "importance": 0.002619817154482007,
+      "rank": 15
+    },
+    "campaign_click_rate": {
+      "importance": 0.00039273800211958587,
+      "rank": 16
+    },
+    "cost_efficiency": {
+      "importance": 0.0007098708883859217,
+      "rank": 17
+    },
+    "cat1_cat2_interaction": {
+      "importance": 0.000809865421615541,
+      "rank": 18
+    },
+    "cat3_cat4_interaction": {
+      "importance": 0.0002538292028475553,
+      "rank": 19
+    }
+  },
+  "business_impact": {
+    "additional_attributions": -2376,
+    "attribution_lift_percent": -2.9417226906362592,
+    "additional_revenue": -118800.0,
+    "cost_change": -431385.0,
+    "net_revenue_impact": 312585.0
+  },
+  "confusion_matrices": {
+    "baseline": [
+      [
+        2703484,
+        501637
+      ],
+      [
+        7716,
+        80769
+      ]
+    ],
+    "optimized": [
+      [
+        2789761,
+        415360
+      ],
+      [
+        10092,
+        78393
+      ]
+    ]
+  }
+}
