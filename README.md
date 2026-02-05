@@ -217,5 +217,3 @@ This project is licensed under the MIT License.
 For questions or collaboration:
 - Gmail: [adidesai119@gmail.com](mailto:adidesai119@gmail.com)
 
----
-```
