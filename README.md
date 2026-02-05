@@ -9,6 +9,8 @@
 
 End-to-end data science pipeline predicting conversion attribution with 95% ROC-AUC, deployed through interactive Tableau dashboards. Optimized for class imbalance with precision-focused ensemble modeling.
 
+### [View Interactive Tableau Dashboard](https://public.tableau.com/views/Criteo_Visualization_17701408628490/CampaignPerformanceAttributionOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ---
 
 ##  Project Overview
@@ -97,6 +99,8 @@ Python 3.8+
 PostgreSQL 12+
 Jupyter Notebook
 ```
+
+---
 
 ##  Technical Pipeline
 
@@ -210,7 +214,7 @@ This project is licensed under the MIT License.
 ##  Contact
 
 For questions or collaboration:
-- Gmail: adidesai119@gmail.com
+- Gmail: [adidesai119@gmail.com](mailto:adidesai119@gmail.com)
 
 ---
-
+```
