@@ -58,6 +58,7 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 │   ├── 1_eda_analysis.ipynb                       # Exploratory Data Analysis
 │   ├── 2_Data_Loading.ipynb                       # Additional data processing
 │   ├── 2_feature_engineering.ipynb                # Feature creation pipeline
+│   ├── app.py                                     # Gradio app
 │   │
 │   ├── XGBOOST/                                   # XGBoost implementation (SELECTED)
 │   │   ├── XGBoost.ipynb                          # Main training notebook
