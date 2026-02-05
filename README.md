@@ -10,6 +10,7 @@
 End-to-end data science pipeline predicting conversion attribution with 95% ROC-AUC, deployed through interactive Tableau dashboards. Optimized for class imbalance with precision-focused ensemble modeling.
 
 ### [View Interactive Tableau Dashboard](https://public.tableau.com/views/Criteo_Visualization_17701408628490/CampaignPerformanceAttributionOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+### [View Gradio app](https://huggingface.co/spaces/adi-09/criteo-attribution-app-g)
 
 ---
 
