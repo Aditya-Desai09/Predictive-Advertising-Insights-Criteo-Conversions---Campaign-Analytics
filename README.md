@@ -44,4 +44,46 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 ---
 
 ## Repository Structure
-
+├── Datasets/
+│ └── Link.txt # Criteo dataset download link
+│
+├── Presentation/
+│ └── CRITEO PPT 1.pptx # Project presentation slides
+│
+├── Report/
+│ └── Criteo Attribution Modeling Report.pdf # Detailed analysis report
+│
+├── Source code/
+│ ├── 1_Data_Loading.ipynb # PostgreSQL data loading
+│ ├── 1_eda_analysis.ipynb # Exploratory Data Analysis
+│ ├── 2_Data_Loading.ipynb # Additional data processing
+│ ├── 2_feature_engineering.ipynb # Feature creation pipeline
+│ │
+│ ├── XGBOOST/ # XGBoost implementation (SELECTED)
+│ │ ├── XGBoost.ipynb # Main training notebook
+│ │ ├── XGBOOST_HYPER.ipynb # Hyperparameter optimization
+│ │ ├── xgboost_trained_model.pkl # Production model
+│ │ ├── xgboost_complete_summary.json # Performance metrics
+│ │ └── xgboost_feature_importance.csv
+│ │
+│ ├── LightGBM/ # LightGBM implementation
+│ │ ├── LightGBM.ipynb
+│ │ ├── lightgbm_trained_model.pkl
+│ │ └── lightgbm_model_info.json
+│ │
+│ ├── CatBoost/ # CatBoost implementation
+│ │ ├── CatBoost.ipynb
+│ │ ├── catboost_trained_model.cbm
+│ │ └── catboost_model_info.json
+│ │
+│ ├── RF/ # Random Forest implementation
+│ │ ├── RF.ipynb
+│ │ ├── random_forest_complete_summary.json
+│ │ └── random_forest_feature_importance.csv
+│ │
+│ └── Logistic/ # Logistic Regression baseline
+│ ├── Logistic.ipynb
+│ └── logistic_regression_complete_summary.json
+│
+├── .gitattributes
+└── README.md
