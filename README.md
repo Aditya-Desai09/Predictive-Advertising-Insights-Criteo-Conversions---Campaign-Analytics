@@ -1,2 +1,2 @@
 # Predictive Advertising Insights Criteo Conversions & Campaign Analytics
-This project focuses on leveraging machine learning and interactive dashboards to analyze digital advertising performance and optimize Criteo campaigns.
+End-to-end ML pipeline for Criteo attribution prediction on 16.4M records. Ensemble of XGBoost, LightGBM, CatBoost achieving 95% ROC-AUC. PostgreSQL + Python + Tableau. Production-ready model selection with precision-focused optimization.
