@@ -1,6 +1,3 @@
-Here's the **corrected README.md** with proper code block formatting:
-
-```markdown
 # Predictive Advertising Insights: Criteo Conversions & Campaign Analytics
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
