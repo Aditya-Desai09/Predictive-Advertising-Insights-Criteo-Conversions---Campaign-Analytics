@@ -1,8 +1,7 @@
-# Predictive Advertising Insights Criteo Conversions & Campaign Analytics
-End-to-end ML pipeline for Criteo attribution prediction on 16.4M records. Ensemble of XGBoost, LightGBM, CatBoost achieving 95% ROC-AUC. PostgreSQL + Python + Tableau. Production-ready model selection with precision-focused optimization.
+Here's the **corrected README.md** with proper code block formatting:
 
-
-# Predictive Advertising Insights: Criteo Attribution Modeling
+```markdown
+# Predictive Advertising Insights: Criteo Conversions & Campaign Analytics
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-316192.svg)
@@ -15,7 +14,7 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 
 ---
 
-## Project Overview
+##  Project Overview
 
 **Business Problem:** Predict which advertising impressions lead to conversions within 30 days to optimize ad spend and bidding strategies.
 
@@ -29,7 +28,7 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 
 ---
 
-## Key Results
+##  Key Results
 
 | Model | ROC-AUC | Precision | Recall | Training Time | Dataset Size |
 |-------|---------|-----------|--------|---------------|--------------|
@@ -43,49 +42,120 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 
 ---
 
-## Repository Structure
+##  Repository Structure
+
+```
 ├── Datasets/
-│ └── Link.txt # Criteo dataset download link
+│   └── Link.txt                                    # Criteo dataset download link
 │
 ├── Presentation/
-│ └── CRITEO PPT 1.pptx # Project presentation slides
+│   └── CRITEO PPT 1.pptx                          # Project presentation slides
 │
 ├── Report/
-│ └── Criteo Attribution Modeling Report.pdf # Detailed analysis report
+│   └── Criteo Attribution Modeling Report.pdf     # Detailed analysis report
 │
 ├── Source code/
-│ ├── 1_Data_Loading.ipynb # PostgreSQL data loading
-│ ├── 1_eda_analysis.ipynb # Exploratory Data Analysis
-│ ├── 2_Data_Loading.ipynb # Additional data processing
-│ ├── 2_feature_engineering.ipynb # Feature creation pipeline
-│ │
-│ ├── XGBOOST/ # XGBoost implementation (SELECTED)
-│ │ ├── XGBoost.ipynb # Main training notebook
-│ │ ├── XGBOOST_HYPER.ipynb # Hyperparameter optimization
-│ │ ├── xgboost_trained_model.pkl # Production model
-│ │ ├── xgboost_complete_summary.json # Performance metrics
-│ │ └── xgboost_feature_importance.csv
-│ │
-│ ├── LightGBM/ # LightGBM implementation
-│ │ ├── LightGBM.ipynb
-│ │ ├── lightgbm_trained_model.pkl
-│ │ └── lightgbm_model_info.json
-│ │
-│ ├── CatBoost/ # CatBoost implementation
-│ │ ├── CatBoost.ipynb
-│ │ ├── catboost_trained_model.cbm
-│ │ └── catboost_model_info.json
-│ │
-│ ├── RF/ # Random Forest implementation
-│ │ ├── RF.ipynb
-│ │ ├── random_forest_complete_summary.json
-│ │ └── random_forest_feature_importance.csv
-│ │
-│ └── Logistic/ # Logistic Regression baseline
-│ ├── Logistic.ipynb
-│ └── logistic_regression_complete_summary.json
+│   ├── 1_Data_Loading.ipynb                       # PostgreSQL data loading
+│   ├── 1_eda_analysis.ipynb                       # Exploratory Data Analysis
+│   ├── 2_Data_Loading.ipynb                       # Additional data processing
+│   ├── 2_feature_engineering.ipynb                # Feature creation pipeline
+│   │
+│   ├── XGBOOST/                                   # XGBoost implementation (SELECTED)
+│   │   ├── XGBoost.ipynb                          # Main training notebook
+│   │   ├── XGBOOST_HYPER.ipynb                    # Hyperparameter optimization
+│   │   ├── xgboost_trained_model.pkl              # Production model
+│   │   ├── xgboost_complete_summary.json          # Performance metrics
+│   │   └── xgboost_feature_importance.csv
+│   │
+│   ├── LightGBM/                                  # LightGBM implementation
+│   │   ├── LightGBM.ipynb
+│   │   ├── lightgbm_trained_model.pkl
+│   │   └── lightgbm_model_info.json
+│   │
+│   ├── CatBoost/                                  # CatBoost implementation
+│   │   ├── CatBoost.ipynb
+│   │   ├── catboost_trained_model.cbm
+│   │   └── catboost_model_info.json
+│   │
+│   ├── RF/                                        # Random Forest implementation
+│   │   ├── RF.ipynb
+│   │   ├── random_forest_complete_summary.json
+│   │   └── random_forest_feature_importance.csv
+│   │
+│   └── Logistic/                                  # Logistic Regression baseline
+│       ├── Logistic.ipynb
+│       └── logistic_regression_complete_summary.json
 │
 ├── .gitattributes
 └── README.md
+```
 
-undefined
+
+---
+
+## Technology Stack
+
+**Data Processing:**
+- Python (Pandas, NumPy)
+- PostgreSQL (16.4M records management)
+
+**Machine Learning:**
+- XGBoost 1.5+ (selected model)
+- LightGBM 3.3+
+- CatBoost 1.0+
+- Scikit-learn (Random Forest, Logistic Regression, metrics)
+
+**Development:**
+- Jupyter Notebook (interactive analysis)
+- Git/GitHub (version control)
+
+**Visualization:**
+- Tableau (interactive dashboards - separate deployment)
+- Matplotlib, Seaborn (exploratory plots)
+
+---
+
+## Key Learnings
+
+1. **Class Imbalance:** ROC-AUC > Accuracy for 2.7% attribution rate
+2. **Feature Engineering:** Campaign performance features critical for all models
+3. **Model Trade-offs:** XGBoost/LightGBM balance performance + speed for production
+4. **Scalability:** PostgreSQL + batching enables 16M+ row processing
+5. **Hyperparameter Tuning:** Grid search improved XGBoost ROC-AUC by 0.5%
+
+---
+
+
+---
+
+## Author
+
+**Aditya Desai**
+- GitHub: [@Aditya-Desai09](https://github.com/Aditya-Desai09)
+- Location: Nagpur, Maharashtra, India
+- Project: PG-DBDA (Post Graduate Diploma in Big Data Analytics)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Acknowledgments
+
+- **Criteo AI Lab** - Attribution dataset and research paper
+- **Diemert et al.** - "Attribution Modeling Increases Efficiency of Bidding in Display Advertising" (AdKDD 2017)
+- Open-source ML community (XGBoost, LightGBM, CatBoost)
+
+---
+
+## Contact
+
+For questions or collaboration:
+- Open an [Issue](https://github.com/Aditya-Desai09/Predictive-Advertising-Insights-Criteo-Conversions---Campaign-Analytics/issues)
+- Connect on LinkedIn
+
+---
+
