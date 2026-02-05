@@ -11,7 +11,7 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 **Business Problem:** Predict which advertising impressions lead to conversions within 30 days to optimize ad spend and bidding strategies.
 
@@ -25,7 +25,7 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 | Model | ROC-AUC | Precision | Recall | Training Time | Dataset Size |
 |-------|---------|-----------|--------|---------------|--------------|
@@ -39,7 +39,7 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 ├── Datasets/
@@ -89,7 +89,7 @@ End-to-end data science pipeline predicting conversion attribution with 95% ROC-
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 ```bash
@@ -98,89 +98,7 @@ PostgreSQL 12+
 Jupyter Notebook
 ```
 
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/Aditya-Desai09/Predictive-Advertising-Insights-Criteo-Conversions---Campaign-Analytics.git
-cd Predictive-Advertising-Insights-Criteo-Conversions---Campaign-Analytics
-```
-
-2. **Install dependencies**
-```bash
-pip install pandas numpy scikit-learn xgboost lightgbm catboost psycopg2-binary matplotlib seaborn jupyter
-```
-
-3. **Download Criteo dataset**
-```bash
-# Follow instructions in Datasets/Link.txt
-# Load data using Source code/1_Data_Loading.ipynb
-```
-
----
-
-## 💻 Usage Guide
-
-### Step 1: Data Loading & EDA
-```bash
-# Open Jupyter Notebook
-jupyter notebook
-
-# Run in order:
-1. Source code/1_Data_Loading.ipynb        # Load 16.4M records into PostgreSQL
-2. Source code/1_eda_analysis.ipynb        # Exploratory analysis
-```
-
-### Step 2: Feature Engineering
-```bash
-# Run feature engineering pipeline
-Source code/2_feature_engineering.ipynb
-
-# Creates 14 engineered features:
-# - campaign_perf, cost_quartile, cat1-cat9, click indicators
-```
-
-### Step 3: Model Training
-
-**Train XGBoost (Recommended):**
-```bash
-# Open XGBoost notebook
-Source code/XGBOOST/XGBoost.ipynb
-
-# Outputs:
-# - xgboost_trained_model.pkl (production model)
-# - xgboost_complete_summary.json (metrics: ROC-AUC 0.951)
-# - Training time: ~35 seconds on 16.4M rows
-```
-
-**Compare All Models:**
-```bash
-# Run all model notebooks to reproduce comparison:
-Source code/XGBOOST/XGBoost.ipynb
-Source code/LightGBM/LightGBM.ipynb
-Source code/CatBoost/CatBoost.ipynb
-Source code/RF/RF.ipynb
-Source code/Logistic/Logistic.ipynb
-```
-
-### Step 4: Make Predictions
-```python
-import pickle
-import pandas as pd
-
-# Load trained XGBoost model
-model = pickle.load(open('Source code/XGBOOST/xgboost_trained_model.pkl', 'rb'))
-
-# Predict attribution probability
-new_impressions = pd.read_csv('new_data.csv')
-predictions = model.predict_proba(new_impressions)[:, 1]
-
-print(f"Average attribution probability: {predictions.mean():.1%}")
-```
-
----
-
-## 🔬 Technical Pipeline
+##  Technical Pipeline
 
 ### Data Management
 - **Source:** Criteo Attribution Dataset (16,468,027 impressions)
@@ -206,7 +124,7 @@ print(f"Average attribution probability: {predictions.mean():.1%}")
 
 ---
 
-## 📈 Model Selection Justification
+##  Model Selection Justification
 
 ### Why XGBoost?
 
@@ -234,20 +152,7 @@ print(f"Average attribution probability: {predictions.mean():.1%}")
 
 ---
 
-## 📊 Visualizations & Reports
-
-### Available Documents
-- **Report:** `Report/Criteo Attribution Modeling Report.pdf` - Comprehensive analysis
-- **Presentation:** `Presentation/CRITEO PPT 1.pptx` - Executive summary
-
-### Model Outputs
-- **Performance Summaries:** `.json` files in each model folder
-- **Feature Importance:** `.csv` files showing predictive features
-- **Confusion Matrices:** Included in summary files
-
----
-
-## 🛠️ Technology Stack
+##  Technology Stack
 
 **Data Processing:**
 - Python (Pandas, NumPy)
@@ -269,7 +174,7 @@ print(f"Average attribution probability: {predictions.mean():.1%}")
 
 ---
 
-## 🎓 Key Learnings
+##  Key Learnings
 
 1. **Class Imbalance:** ROC-AUC > Accuracy for 2.7% attribution rate
 2. **Feature Engineering:** Campaign performance features critical for all models
@@ -279,17 +184,7 @@ print(f"Average attribution probability: {predictions.mean():.1%}")
 
 ---
 
-## 🔮 Future Enhancements
-
-- [ ] **Deep Learning:** Transformer-based models for sequential patterns
-- [ ] **Real-time API:** Deploy as REST API with FastAPI + Docker
-- [ ] **A/B Testing:** Validate predictions against controlled experiments
-- [ ] **Feature Expansion:** User behavior sequences, cross-campaign interactions
-- [ ] **AutoML:** Automated hyperparameter tuning with Optuna
-
----
-
-## 👤 Author
+##  Author
 
 **Aditya Desai**
 - GitHub: [@Aditya-Desai09](https://github.com/Aditya-Desai09)
@@ -298,13 +193,13 @@ print(f"Average attribution probability: {predictions.mean():.1%}")
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Criteo AI Lab** - Attribution dataset and research paper
 - **Diemert et al.** - "Attribution Modeling Increases Efficiency of Bidding in Display Advertising" (AdKDD 2017)
@@ -312,28 +207,11 @@ This project is licensed under the MIT License.
 
 ---
 
-## 📧 Contact
+##  Contact
 
 For questions or collaboration:
-- Open an [Issue](https://github.com/Aditya-Desai09/Predictive-Advertising-Insights-Criteo-Conversions---Campaign-Analytics/issues)
-- Connect on LinkedIn
+- gmail: adidesai119@gmail.com
 
 ---
-
-**⭐ If you find this project helpful, please consider giving it a star!**
-```
-
-***
-
-## 🔧 **What I Fixed:**
-
-1. ✅ **Added triple backticks** around the Repository Structure (` ```  ``` `)
-2. ✅ **Removed duplicate title** at the top
-3. ✅ **Fixed "undefined" text** at the bottom of structure
-4. ✅ **Added proper code block formatting** for all bash/python examples
-5. ✅ **Added emojis** for better section visibility
-6. ✅ **Fixed spacing** between sections
-
-Now the tree structure will render **perfectly** on GitHub! 🎯
 
 Just copy-paste this entire block into your `README.md` file. ✅
