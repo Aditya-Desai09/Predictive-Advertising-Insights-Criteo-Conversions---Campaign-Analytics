@@ -1,0 +1,21 @@
+{
+  "project_title": "Criteo Attribution Modeling - Logistic Regression (Complete Dataset)",
+  "model": "Logistic Regression",
+  "dataset": {
+    "size": "16,468,027 impressions",
+    "attribution_rate": "2.7%",
+    "features": 14
+  },
+  "performance": {
+    "roc_auc": "0.933",
+    "precision": "10.6%",
+    "recall": "93.0%",
+    "training_time": "19.2s"
+  },
+  "key_achievements": [
+    "Trained on COMPLETE dataset (16,468,027 rows)",
+    "ROC-AUC: 0.933",
+    "Fast execution: 19.2 seconds",
+    "Production-ready baseline model"
+  ]
+}

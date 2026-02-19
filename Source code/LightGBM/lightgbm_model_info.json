@@ -1,0 +1,23 @@
+{
+  "features": [
+    "campaign",
+    "cost",
+    "cpo",
+    "click",
+    "cat1",
+    "cat2",
+    "cat3",
+    "cat4",
+    "cat5",
+    "cat6",
+    "cat8",
+    "cat9",
+    "campaign_perf",
+    "cost_quartile"
+  ],
+  "target": "attribution",
+  "trained_on_rows": 16468027,
+  "roc_auc": 0.9492072305623874,
+  "precision": 0.1357407239011313,
+  "recall": 0.9109792620218116
+}
